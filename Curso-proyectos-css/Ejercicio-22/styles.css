@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rango-comun {
+    background-color: #5fd3d3;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.rango-comun p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.rango-comun h2 {
+    margin: 5px 0 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.grafico {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.barra {
+    width: 30px;
+    background-color: #5fd3d3;
+    border-radius: 5px 5px 0 0;
+}
+
+.barra:first-child {
+    background-color: #6c7ae0;
+}
+
+.etiquetas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.aumento {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aumento p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.aumento h2 {
+    margin: 5px 0 0;
+    font-size: 1.5em;
+}

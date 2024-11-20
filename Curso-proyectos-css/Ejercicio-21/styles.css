@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #b73d3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.contenido-principal {
+    flex: 3;
+    padding: 20px;
+}
+
+.contenido-principal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.articulo {
+    background-color: #fffacd; /* Un amarillo más claro y suave */
+    height: 150px; /* Altura ajustada */
+    width: 250px; /* Ancho fijo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    background-image: linear-gradient(to bottom right, #fffacd, #ffee99); /* Gradiente sutil */
+    padding: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.barra-lateral {
+    flex: 1;
+    background-color: #00aaff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}

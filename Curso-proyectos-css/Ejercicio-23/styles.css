@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid #3498db;
+    background-color: white;
+    color: #3498db;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Efecto para el primer botón */
+.btn-upload {
+    height: 70px;
+}
+
+.btn-upload .visible-text,
+.btn-upload .hover-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-upload .visible-text {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-upload .hover-text {
+    top: -100%;
+}
+
+.btn-upload:hover .visible-text {
+    top: 100%;
+}
+
+.btn-upload:hover .hover-text {
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+/* Efecto para el segundo botón */
+.btn-aura {
+    border-radius: 35px;
+}
+
+.btn-aura::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+.btn-aura:hover::before {
+    transform: scale(1);
+}
