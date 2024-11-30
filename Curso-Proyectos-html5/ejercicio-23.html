@@ -1,0 +1,54 @@
+<!--
+    Crea un formulario con un campo de tipo busqueda ,
+    Telefono, hora, url, barra progreso, lista de datos, sumbit y reset.
+
+    todos los cambos deberan tener un label
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23 HTML 5</title>
+</head>
+<body>
+    <h1>formulario</h1>
+
+    <form>
+        <div>
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar"/>
+        </div>
+        <div>
+            <label for="buscar">Telefono</label>
+            <input type="tel" id="telefono"/>
+        </div>
+        <div>
+            <label for="hora">Hora</label>
+            <input type="time" id="hora"/>
+        </div>
+        <div>
+            <label for="web">Sitio Web</label>
+            <input type="url" id="web"/>
+        </div>
+        <div>
+            <label for="progreso">barra progreso</label>
+            <progress max="100" value="27"></progress>
+        </div>
+        <div>
+            <label for="coches">Lista de coches</label>
+            <input list="coches" name="coche" />
+
+            <datalist id="coches">
+                <option value="audi"></option>
+                <option value="mercedes"></option>
+                <option value="bmw"></option>
+                <option value="renault"></option>
+            </datalist>
+        </div>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+    </form>
+</body>
+</html>
